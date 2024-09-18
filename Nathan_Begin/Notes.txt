@@ -1,0 +1,71 @@
+# To start project
+   Create a new folder for the project
+   Open this folder in Cursor
+f   Press Ctrl+Shift+P to open the command palette
+   Select the Python Environment
+   Choose Python Interpreter to use
+# Python creates the virtual environment
+   In the .venv folder expand Scripts, then select Activate.ps1
+# You will see the new environment in the terminal window as (.venv)
+# type pip list freeze to see the packages installed in the environment
+# type pip install <package name> to install a package
+# type pip uninstall <package name> to uninstall a package
+# type pip freeze > requirements.txt to freeze the current environment to requirements.txt
+# type pip install -r requirements.txt to install the packages from requirements.txt
+
+pip install python-dotenv
+
+pip install jupyterlab
+juputer lab
+
+To install all models for ai assistant in Juypter Labs
+
+pip install jupyter-ai[all]         #Load all models
+pip install jupyter-ai[openai]      #Load only openai models
+
+
+%load_ext jupyter_ai_magics
+
+%%ai    # Run magics in a cell
+
+https://github.com/openai   # OpenAI Github Library
+
+python.exe -m pip install --upgrade pip
+
+pip list
+pip install langchain
+pip list
+
+
+pip install langchain-openai
+
+pip install python-dotenv
+
+pip show langchain
+
+On YouTube - Sam Witteveen has extensive collection of
+AI videos and tutorials
+
+
+
+pip install langchain==0.0.352
+pip install openai==0.27.8
+pip install python-dotenv==1.0.0
+
+…or create a new repository on the command line
+echo "# GriderAI2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/davidwood3/GriderAI2.git
+git push -u origin master
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/davidwood3/GriderAI2.git
+git branch -M master
+git push -u origin master
+
+langchain
+pip install langchain==0.2.1 python-decouple==3.8 langchain-google-genai==1.0.5
+
