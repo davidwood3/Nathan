@@ -16,7 +16,7 @@ f   Press Ctrl+Shift+P to open the command palette
 pip install python-dotenv
 
 pip install jupyterlab
-juputer lab
+jupyter lab
 
 To install all models for ai assistant in Juypter Labs
 
