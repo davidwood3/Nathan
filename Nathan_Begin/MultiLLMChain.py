@@ -10,7 +10,7 @@ set_debug(True)
 
 GOOGLE_GEMINI_KEY = config("GOOGLE_GENAI_API_KEY")
 OPENAI_KEY = config("OPENAI_API_KEY")
-
+#
 llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_GEMINI_KEY)
 llm2 = ChatOpenAI(temperature=0, model_name="gpt-4o", api_key=OPENAI_KEY)
 
