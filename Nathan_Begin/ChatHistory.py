@@ -13,13 +13,15 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 # llm = ChatOllama(model="gemma:2b")
 GOOGLE_API_KEY = config("GOOGLE_GENAI_API_KEY")
 
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", google_api_key=GOOGLE_API_KEY)
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", google_api_key=GOOGLE_API_KEY, verbose=True)
+verbose = True
+
 
 prompt = ChatPromptTemplate.from_messages(
     [
         (
             "system",
-            "You are an AI chatbot having a conversation with a human. Use the following context to understand the human question. Do not include emojis in your answer. ",
+            "You are an AI chatbot having a conversation with a human. Use the following context to understand the human question. Show your thinking.Do not include emojis in your answer. ",
         ),
         MessagesPlaceholder(variable_name="chat_history"),
         ("human", "{input}"),
