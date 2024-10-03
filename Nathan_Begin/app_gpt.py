@@ -8,7 +8,7 @@ llm = ChatOpenAI(temperature=0, model_name="gpt-4o", openai_api_key=OPENAI_API_K
 print("Q & A with AI")
 print("=============")
 
-question ="What is the currency of Thailand?"
+question ="What is the currency of Michigan?"
 print("Question: " + question)
 
 response = llm.invoke(question)
